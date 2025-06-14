@@ -1,19 +1,4 @@
 
-/* FOR PROJECT -03  [  3D-cards-03.html  ] */
- /* Title styling */
-.unique-title {
-  text-align: center;
-}
-.unique-title span {
-  color: #00dfc4;
-}
-.unique-learning {
-  font-size: 1rem;
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-}
-
 /* Project card container */
 .marvel .container {
   padding: 50px 0;
@@ -44,7 +29,7 @@
   flex-direction: column;
   justify-content: flex-end;
 }
-
+/* PLEASE PUT YOUR OWN IMAGE LINK */
 .marvel .card1 .card {
   background-image: url("images/dragon_1.jpg");
 }
