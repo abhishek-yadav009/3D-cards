@@ -1,0 +1,176 @@
+
+/* FOR PROJECT -03  [  3D-cards-03.html  ] */
+ /* Title styling */
+.unique-title {
+  text-align: center;
+}
+.unique-title span {
+  color: #00dfc4;
+}
+.unique-learning {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Project card container */
+.marvel .container {
+  padding: 50px 0;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Card layout */
+.marvel .parent {
+  height: 400px;
+  width: 300px;
+  padding: 20px;
+  perspective: 1000px;
+  position: relative;
+}
+
+.marvel .card {
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  transform-style: preserve-3d;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.marvel .card1 .card {
+  background-image: url("images/dragon_1.jpg");
+}
+.marvel .card2 .card {
+  background-image: url("images/dragon_10.jpg");
+}
+.marvel .card3 .card {
+  background-image: url("images/dragon_11.jfif");
+}
+.marvel .card4 .card {
+  background-image: url("images/dragon_5.jpg");
+}
+.marvel .card5 .card {
+  background-image: url("images/dragon_6.jpg");
+}
+.marvel .card6 .card {
+  background-image: url("images/dragon_3.jpg");
+}
+
+
+.marvel .card:hover {
+  background-position: 80% 20%;
+  transform: rotate3d(0.5, 1, 0, 25deg);
+}
+
+/* Inner content */
+.marvel .content-box {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 0 0 10px 10px;
+  padding: 25px;
+  box-shadow: rgba(0, 47, 255, 0.9) 0px 20px 50px -25px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+}
+
+.marvel .card-title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 900;
+  transform: translate3d(0, 0, 20px);
+  transition: all 0.5s ease-in-out;
+}
+.marvel .card-title:hover {
+  transform: translate3d(0, 0, 50px);
+}
+
+.marvel .card-content {
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: rgb(185, 185, 185);
+  transform: translate3d(0, 0, 20px);
+  transition: all 0.5s ease-in-out;
+}
+.marvel .card-content:hover {
+  transform: translate3d(0, 0, 50px);
+}
+
+.marvel .see-more {
+  display: block;
+  font-weight: 900;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: rgb(0, 136, 255);
+  padding-top: 15px;
+  transform: translate3d(0, 0, 20px);
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+}
+.marvel .see-more:hover {
+  transform: translate3d(0, 0, 50px);
+}
+
+/* Date box */
+.marvel .date-box {
+  position: absolute;
+  top: 75px;
+  left: 15px;
+  height: 60px;
+  width: 60px;
+  background-color: black;
+  border-radius: 10px;
+  padding: 12px;
+  transform: translate3d(0, 0, 50px);
+  box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px,
+              rgb(0, 200, 255) 0px 18px 36px -18px;
+}
+.marvel .date-box span {
+  display: block;
+  text-align: center;
+}
+.marvel .date-box .month {
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.marvel .date-box .date {
+  color: rgb(0, 136, 255);
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+/* Unique filters for each card */
+.marvel .card1 { filter: hue-rotate(150deg); }
+.marvel .card2 { filter: hue-rotate(250deg); }
+.marvel .card3 { filter: hue-rotate(90deg); }
+.marvel .card4 { filter: hue-rotate(320deg); }
+.marvel .card5 { filter: hue-rotate(180deg); }
+.marvel .card6 { filter: hue-rotate(60deg); }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .marvel .parent {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .marvel .card {
+    height: auto;
+    background-size: contain;
+  }
+  .description,
+  .unique-title,
+  .unique-learning {
+    margin-left: 0;
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+}
